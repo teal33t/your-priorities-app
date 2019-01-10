@@ -643,6 +643,29 @@
       });
       this.push('fonts', {});
 
+
+
+      this.push('themes', {
+        name: 'Persian Suitable',
+        '--primary-background-color': 'var(--paper-deep-purple-50)',
+        '--primary-color':  'var(--paper-deep-purple-500)',
+        '--primary-color-200': 'var(--paper-deep-purple-200)',
+        '--primary-color-300': 'var(--paper-deep-purple-300)',
+        '--primary-color-400': 'var(--paper-deep-purple-400)',
+        '--primary-color-600': 'var(--paper-deep-purple-600)',
+        '--primary-color-700': 'var(--paper-deep-purple-700)',
+        '--primary-color-800': 'var(--paper-deep-purple-800)',
+        '--primary-color-900': 'var(--paper-deep-purple-900)',
+        '--accent-color': 'var(--paper-red-a700)',
+        '--accent-color-100': 'var(--paper-red-a100)',
+        '--accent-color-200': 'var(--paper-red-a200)',
+        '--accent-color-300': 'var(--paper-red-a400)',
+        '--accent-color-400': 'var(--paper-red-a700)',
+        '--middle-color': 'var(--primary-background-color)',
+        '--icon-general-color': '#fff',
+      });
+      this.push('fonts', { htmlImport: "/styles/fonts/persian-font.html", fontName: 'Samim' });
+
     },
 
     setTheme: function (number) {
