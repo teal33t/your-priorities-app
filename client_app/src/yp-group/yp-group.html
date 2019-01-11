@@ -35,6 +35,9 @@
 <dom-module id="yp-group">
   <template>
     <style include="iron-flex iron-flex-alignment">
+      :root{
+        font-family: 'Samim';
+      }
       .objectives {
         padding-bottom: 40px;
         max-width: 432px;
@@ -100,6 +103,8 @@
       }
 
       .largeAddButton {
+        direction: rtl;
+        font-family: 'Samim';
         margin-bottom: 4px;
         margin-top: 4px;
       }
@@ -195,12 +200,12 @@
         <yp-group-card-large id="groupCard" class="largeCard" group="[[group]]" on-update-group="_refreshAjax"></yp-group-card-large>
       </div>
 
-      <div class="largeAddButton layout horizontal center-center" is-apple$="[[isOldiOs]]" is-ipad$="[[isIpad]]" hidden$="[[group.configuration.hideNewPost]]">
+      <div class="largeAddButton layout horizontal center-center" style="font-family: 'Samim';" is-apple$="[[isOldiOs]]" is-ipad$="[[isIpad]]" hidden$="[[group.configuration.hideNewPost]]">
         <yp-post-card-add disabled="[[disableNewPosts]]" on-new-post="_newPost" elevation="2"></yp-post-card-add>
       </div>
 
       <div class="layout horizontal center-center tabContainer" hide$="[[group.configuration.hideAllTabs]]">
-        <paper-tabs scrollable$="[[!wideWidth]]" id="paperTabs" has-non-open-posts$="[[hasNonOpenPosts]]" class="tabs" selected="{{selectedTab}}" attr-for-selected="name" focused>
+        <paper-tabs scrollable$="[[!wideWidth]]" id="paperTabs" style="direction: rtl; font-family: 'Samim';" has-non-open-posts$="[[hasNonOpenPosts]]" class="tabs" selected="{{selectedTab}}" attr-for-selected="name" focused>
           <paper-tab id="tab1" name="open">
             <div class="layout vertical center-center tabCounterContainer">
               <div hidden$="[[isTabOpen]]">
@@ -247,8 +252,8 @@
               </div>
             </paper-tab>
           </template>
-          <paper-tab name="news">[[t('news')]]</paper-tab>
-          <paper-tab name="map" hidden$="[[locationHidden]]">[[t('posts.map')]]</paper-tab>
+          <paper-tab name="news" style="font-family: 'Samim';">[[t('news')]]</paper-tab>
+          <paper-tab name="map" style="font-family: 'Samim';" hidden$="[[locationHidden]]">[[t('posts.map')]]</paper-tab>
         </paper-tabs>
       </div>
 

@@ -62,6 +62,7 @@
 
     <style include="iron-flex iron-flex-alignment">
       :host {
+        font-family: 'Samim';
         --main-stats-color-on-white: #878787;
 
         --paper-dialog-button-color: var(--accent-color);
@@ -171,6 +172,8 @@
       }
 
       .dropdown-content {
+        font-family: 'Samim';
+        direction: rtl;
         width: 200px;
       }
 
@@ -545,7 +548,7 @@
       _setupTranslationSystem: function () {
         console.log("Have started _setupTranslationSystem");
         var hostname = window.location.hostname;
-        var defaultLocale = 'en';
+        var defaultLocale = 'fa';
         if (hostname.indexOf('betrireykjavik') > -1) {
           defaultLocale = 'is';
         } else if (hostname.indexOf('betraisland') > -1) {

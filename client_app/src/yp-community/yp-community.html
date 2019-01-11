@@ -74,10 +74,10 @@
         <yp-community-large-card id="communityCard" slot="largeCard" class="largeCard card" community="[[community]]" on-update-community="_refreshAjax"></yp-community-large-card>
       </template>
 
-      <paper-tabs id="paper_tabs" apple$="[[isOldiOs]]" slot="tabs" class="tabs" selected="{{selectedTab}}" attr-for-selected="name" focused hidden$="[[community.configuration.hideAllTabs]]">
-        <paper-tab name="groups" class="tab"><span>[[t('groups')]]</span> &nbsp; (<span>[[groupsLength]]</span>)</paper-tab>
-        <paper-tab name="news" class="tab">[[t('news')]]</paper-tab>
-        <paper-tab name="map" class="tab" hidden$="[[locationHidden]]">[[t('posts.map')]]</paper-tab>
+      <paper-tabs id="paper_tabs" apple$="[[isOldiOs]]" style="direction: rtl" slot="tabs" class="tabs" selected="{{selectedTab}}" attr-for-selected="name" focused hidden$="[[community.configuration.hideAllTabs]]">
+        <paper-tab name="groups" style="font-family: 'Samim';" class="tab"><span>[[t('groups')]]</span> &nbsp; (<span>[[groupsLength]]</span>)</paper-tab>
+        <paper-tab name="news" style="font-family: 'Samim';" class="tab">[[t('news')]]</paper-tab>
+        <paper-tab name="map" style="font-family: 'Samim';" class="tab" hidden$="[[locationHidden]]">[[t('posts.map')]]</paper-tab>
       </paper-tabs>
 
       <iron-pages class="tabPages" slot="tabPages" selected="{{selectedTab}}" attr-for-selected="name" entry-animation="fade-in-animation" exit-animation="fade-out-animation">

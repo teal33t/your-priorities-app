@@ -238,12 +238,12 @@
         <yp-post-cover-media mini$="[[mini]]" audio-cover$="[[isAudioCover]]" post="[[post]]" hidden$="[[post.Group.configuration.hidePostCover]]"></yp-post-cover-media>
         <div class="postNameContainer">
           <div class="post-name" mini$="[[mini]]" id="postName" on-tap="goToPostIfNotHeader">
-            <yp-magic-text id="postNameMagicText" text-type="postName" content-language="[[post.language]]"
+            <yp-magic-text style="direction: rtl;" id="postNameMagicText" text-type="postName" content-language="[[post.language]]"
                            text-only content="[[postName]]" content-id="[[post.id]]">
             </yp-magic-text>
           </div>
         </div>
-        <yp-magic-text class="description layout horizontal" on-tap="goToPostIfNotHeader" hidden$="[[hideDescription]]"
+        <yp-magic-text style="direction: rtl;" class="description layout horizontal" on-tap="goToPostIfNotHeader" hidden$="[[hideDescription]]"
                        text-type="postContent" content-language="[[post.language]]"
                        text-only content="[[post.description]]" content-id="[[post.id]]" truncate="100">
         </yp-magic-text>

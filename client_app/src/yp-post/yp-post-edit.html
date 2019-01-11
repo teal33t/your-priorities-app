@@ -151,7 +151,7 @@
                     use-next-tab-action="[[newPost]]" on-next-tab-action="_nextTab" method="[[method]]"
                     title="[[editHeaderText]]" save-text="[[saveText]]" class="container"
                     next-action-text="[[t('next')]]" toast-text="[[toastText]]" params="[[params]]">
-      <paper-tabs selected="{{selected}}" id="paperTabs" focused>
+      <paper-tabs selected="{{selected}}" id="paperTabs" style="font-family: 'Samim'; direction: rtl;" focused>
         <paper-tab><span>[[t('post.yourPost')]]</span></paper-tab>
         <template is="dom-if" restamp if="[[newPost]]">
           <paper-tab>
@@ -174,7 +174,7 @@
       <div class="layout vertical wrap">
         <iron-pages id="pages" class="layout horizontal" selected="[[selected]]">
           <section>
-            <div class="layout vertical flex">
+            <div class="layout vertical flex" >
 
               <paper-input id="name"
                            required

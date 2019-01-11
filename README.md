@@ -1,6 +1,9 @@
-# Your Priorities Version 8.2
+# Your Priorities Version 8.2 - RTL Fork
 
 ![alt text](https://citizens.is/wp-content/uploads/2018/08/Capture-2.png "Your Priorities screenshot")
+
+This version has been created for use in Tehran, It  has a suitable theme for Persian language.
+[demo](http://ec2-3-86-99-250.compute-1.amazonaws.com:4242)
 
 ## Key Features
 

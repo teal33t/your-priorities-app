@@ -306,9 +306,9 @@
               <span>[[t('post.tabs.debate')]] (<span id="tabCountDebate"></span>)</span>
             </div>
           </paper-tab>
-          <paper-tab name="news">[[t('post.tabs.news')]]</paper-tab>
-          <paper-tab name="location" hidden$="[[locationHidden]]">[[t('post.tabs.location')]]</paper-tab>
-          <paper-tab name="photos">
+          <paper-tab name="news" style="font-family: 'Samim';">[[t('post.tabs.news')]]</paper-tab>
+          <paper-tab name="location" style="font-family: 'Samim';" hidden$="[[locationHidden]]">[[t('post.tabs.location')]]</paper-tab>
+          <paper-tab name="photos" style="font-family: 'Samim';">
             <div class="layout vertical center-center tabCounterContainer">
               <span>[[t('post.tabs.photos')]] (<span id="tabCountPhotos"></span>)</span>
             </div>
@@ -320,7 +320,7 @@
         <div name="debate" class="layout horizontal center-center">
           <yp-post-points host="[[host]]" id="pointsSection" post="[[post]]" scroll-to-id$="[[scrollToPointId]]"></yp-post-points>
         </div>
-        <section name="news" class="minHeightSection">
+        <section name="news"  style="font-family: 'Samim';" class="minHeightSection">
           <template is="dom-if" if="[[newsTabSelected]]">
             <ac-activities id="postNews" selected-tab="[[selectedTab]]" disable-new-posts="[[disableNewPosts]]" post-group-id="[[post.group_id]]" post-id="[[post.id]]"></ac-activities>
           </template>
@@ -344,7 +344,7 @@
           </div>
         </section>
         <section name="photos" class="minHeightSection">
-          <div class="layout vertical flex">
+          <div class="layout vertical flex" >
             <div class="layout horizontal center-center">
               <yp-post-user-images post="[[post]]"></yp-post-user-images>
             </div>
